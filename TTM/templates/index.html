@@ -1,0 +1,22 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tourism & Travel Management</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css'%}"/>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css'%}"/>
+</head>
+<body style="background-image:url('{%static 'images/klu.jpg'%}');
+background-repeat:no-repeat;background-size:100%;";>
+<a href ="{% url 'login' %}"> login | </a>
+<a href="{% url '' %}"> Home | </a>
+<a href="{% url 'registration' %}" > Sign up | </a>
+<a href="{% url 'contact' %}"> Contact Us | </a>
+<a href="{% url 'changepassword' %}">Change password | </a>
+<br>
+{% block b1 %}
+<h2 align="center"><font color="green">Welcome to KLU Tourism & Travel Management</font>  </h2>
+<br>
+{% endblock %}
+</body>
+</html>
